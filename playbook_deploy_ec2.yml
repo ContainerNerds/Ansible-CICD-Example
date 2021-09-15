@@ -72,7 +72,7 @@
         state: present
         comment: Production service account
         shell: /bin/bash
-        password: "{{ 'Nothing01!' | password_hash('sha512') }}"
+        password: "{{ 'PASSWORD_HERE' | password_hash('sha512') }}"
         update_password: on_create
 
     # - name: Update yum packages
